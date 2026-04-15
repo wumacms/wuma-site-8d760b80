@@ -1,0 +1,48 @@
+{
+  "assets": [
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "target": "assets/images/-40f14b32_cdn_tailwindcss.com"
+    },
+    {
+      "url": "https://placehold.co/32x32/4F46E5/white?text&#x3D;Logo",
+      "target": "assets/images/-27121b7b_white.jpg"
+    },
+    {
+      "url": "https://placehold.co/32x32/4F46E5/white?text=Logo",
+      "target": "assets/images/6ed6211d_white.jpg"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib&#x3D;rb-4.0.3&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;900&amp;q&#x3D;60",
+      "target": "assets/images/20c346e6_photo-1557804506-669a67965ba0.jpg"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib&#x3D;rb-4.0.3&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1200&amp;q&#x3D;80",
+      "target": "assets/images/76de2847_photo-1522071820081-009f0129c71c.jpg"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib&#x3D;rb-4.0.3&amp;auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1200&amp;q&#x3D;80",
+      "target": "assets/images/70193023_photo-1551434678-e076c223a692.jpg"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w&#x3D;400",
+      "target": "assets/images/1678974d_photo-1560250097-0b93528c311a.jpg"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w&#x3D;400",
+      "target": "assets/images/-5269757_photo-1573496359142-b8d87734a5a2.jpg"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w&#x3D;400",
+      "target": "assets/images/-50ccb217_photo-1519085360753-af0119f7cbe7.jpg"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w&#x3D;400",
+      "target": "assets/images/-aaaa822_photo-1580489944761-15a19d654956.jpg"
+    },
+    {
+      "url": "https://placehold.co/200x200?text&#x3D;Logo",
+      "target": "assets/images/-57cd0a5a_200x200.jpg"
+    }
+  ]
+}

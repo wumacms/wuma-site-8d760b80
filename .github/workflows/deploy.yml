@@ -1,0 +1,41 @@
+name: Sync Remote Assets
+on: [push]
+
+# 必须显式声明写权限，否则自带的 GITHUB_TOKEN 无法推送到 gh-pages 分支（会导致 git exit code 128）
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Download Multiple Source Assets
+        run: |
+          if [ ! -f sync-assets.json ]; then
+            echo "No sync-assets.json found, skipping."
+            exit 0
+          fi
+          jq -c '.assets[]' sync-assets.json | while read item; do
+            SRC_URL=$(echo $item | jq -r '.url')
+            TARGET_PATH=$(echo $item | jq -r '.target')
+            
+            mkdir -p "$(dirname "$TARGET_PATH")"
+            echo "Downloading $SRC_URL to $TARGET_PATH..."
+            # 允许单个图片下载失败（如遇到 localhost 等本地路径），避免终止整个构建
+            curl -fL "$SRC_URL" -o "$TARGET_PATH" || echo "::warning::Failed to download $SRC_URL"
+          done
+
+      - name: Commit Assets
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-sync remote images from multiple sources"
+            git push
+          fi
