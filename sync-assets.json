@@ -39,6 +39,10 @@
     {
       "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w&#x3D;400",
       "target": "assets/images/-aaaa822_photo-1580489944761-15a19d654956.jpg"
+    },
+    {
+      "url": "https://wvevtsvvylvqfxukgoou.supabase.co/storage/v1/object/public/assets/1776300119874/1776300119874-3ugwsb.jpeg",
+      "target": "assets/images/-36c2608e_1776300119874-3ugwsb.jpeg"
     }
   ]
 }
