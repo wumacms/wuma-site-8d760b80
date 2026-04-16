@@ -5,8 +5,8 @@
       "target": "assets/images/-40f14b32_cdn_tailwindcss.com"
     },
     {
-      "url": "https://placehold.co/100x100/jpg",
-      "target": "assets/images/3cf54190_jpg.jpg"
+      "url": "https://wvevtsvvylvqfxukgoou.supabase.co/storage/v1/object/public/assets/1776299315325/1776299315325-i6wu1e.png",
+      "target": "assets/images/49ed5e19_1776299315325-i6wu1e.png"
     },
     {
       "url": "https://placehold.co/32x32/4F46E5/white?text=Logo",
@@ -39,10 +39,6 @@
     {
       "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w&#x3D;400",
       "target": "assets/images/-aaaa822_photo-1580489944761-15a19d654956.jpg"
-    },
-    {
-      "url": "https://placehold.co/200x200?text&#x3D;Logo",
-      "target": "assets/images/-57cd0a5a_200x200.jpg"
     }
   ]
 }
